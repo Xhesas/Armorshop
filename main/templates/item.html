@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if item_name %}
+    <title>Armor Shop - {{ item_name }}</title>
+    {% else %}
+    <title>Armor Shop - Item Details</title>
+    {% endif %}
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" href="/resources/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="banner2">
+        <div>
+            <h1>Armor Shop <br /> <p class="laev"></p></h1>
+            <p class="laev"><em></em></p>
+        </div>
+    </header>
+
+    {% if item_name %}
+    <section class="main">
+        <div>
+            <h1>{{ item_name }}</h1>
+            <img src="{{ item_image }}" alt="{{ item_name }}" />
+            <p>{{ item_description }}</p>
+            {% if prices[0] != "" or prices[1] != "" %}
+            <p>
+            {% if prices[0] != "" %}
+            Prices: {{ prices[0] }}
+            {% endif %}
+            {% if prices[0] != "" and prices[1] != "" %}
+            <br>
+            {% endif %}
+            {% if prices[1] != "" %}
+            Prices as Addition: {{ prices[1] }}
+            {% endif %}
+            </p>
+            {% endif %}
+        </div>
+        {% if display_button %}
+        <div class="button-container">
+            {% include 'button.html' %}
+        </div>
+        {% endif %}
+    </section>
+
+    {% if additions %}
+    <section class="main catalog">
+        <p>Select your currency:</p>
+        <div class="currency-selector">
+            <label for="currency">Currency: </label>
+            <select id="currency">
+                <option value="glanga">Glanga</option>
+                <option value="slab">Slab / Slablet</option>
+                <option value="diamond">Diamond</option>
+                <option value="puan">Puan Unity Argent</option>
+            </select>
+        </div>
+        <hr>
+
+        <!-- Additions Section -->
+        <h3>Possible Additions on this Item</h3>
+        <div class="items">
+            {% for addition in additions %}
+            {% if 'prices' in addition or 'additionPrices' in addition %}
+            <div class="item" id="{{ addition['id'] }}">
+                <h1>{{ addition['name'] }}</h1>
+                {% for price in addition['price_list'] %}
+                <p name="{{ price[1] }}" class="hide">Price: {{ price[0] }}</p>
+                {% endfor %}
+                <a href="/item/{{ addition['id'] }}">more</a>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+    {% endif%}
+
+    {% else %}
+    <section class="main">
+        <div>
+            <h1>404</h1>
+            <p>Item not found</p>
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">{% include 'footer.html' %}</footer>
+
+    <script src="/js/item"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<div class="modal" id="messageForm">
+    <div class="modal-content">
+        <span class="close-button" id="closeFormButton">&times;</span>
+        <h2>Message</h2>
+        <form id="messageFormElement" action="/message" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="message">Your message:</label>
+            <textarea id="message" name="message" rows="5" cols="50" required></textarea>
+
+            <div class="form-buttons">
+                <button type="submit" value="message" class="submit-button">send</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap declarations
+Sitemap: https://armor-shop.xhesas.com/sitemap.xml

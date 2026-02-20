@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armor Shop - Contact</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" href="/resources/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Armor Shop <br /> <p class="laev"></p></h1>
+        <p class="laev"><em></em></p>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main">
+        <h3>Contact Information</h3>
+        <div style="width:50%; margin: auto; text-align: left;">
+        <p>You can write to the <a href="mailto:atlanticarmorshop@gmail.com?subject=Armor-Shop%20Issue&body=Your%20Message">official email</a> of the armor shop</p>
+        <p>You can write to the <a href="mailto:namnak.xhesas@gmailcom?subject=Armor-Shop%20Issue&body=Your%20Message">personal email</a> of Namnak Xhesas</p>
+        <p>You can message Namnak Xhesas on discord at @xhesas or reach Namnak Xhesas through the ŋuhcraft postal system</p>
+        <p onclick="openForm()" style="cursor: pointer;">You can leave a message on this website <a onclick="openForm()" style="cursor: pointer; color: yellow">></a></p>
+        </div>
+        <div>{% include 'message.html' %}</div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">{% include 'footer.html' %}</footer>
+
+    <script src="/js/message"></script>
+</body>
+</html>

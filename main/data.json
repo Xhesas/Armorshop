@@ -1,0 +1,520 @@
+[
+    {
+        "id": "trident",
+        "name": "Trident",
+        "prices": {
+            "glanga": 19,
+            "puan": 15.5,
+            "slab": 8.5,
+            "diamond": 9.5
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0,
+        "tags": [
+            "enchantable"
+        ]
+    },
+    {
+        "id": "trident-enchanted",
+        "name": "Enchanted Trident",
+        "prices": {
+            "glanga": 22,
+            "puan": 18,
+            "slab": 10,
+            "diamond": 11
+        },
+        "image": "",
+        "description": "",
+        "purchases": 4,
+        "tags": [
+            "enchantable"
+        ]
+    },
+    {
+        "id": "iron-armor",
+        "name": "Iron Armor Piece",
+        "prices": {
+            "glanga": 1,
+            "puan": 1,
+            "slab": 0.5,
+            "diamond": 0.5
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0,
+        "tags": [
+            "trimable",
+            "enchantable"
+        ]
+    },
+    {
+        "id": "iron-armor-enchanted",
+        "name": "Enchanted Iron Armor Piece",
+        "prices": {
+            "glanga": 3,
+            "puan": 2.5,
+            "slab": 1.5,
+            "diamond": 1.5
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0,
+        "tags": [
+            "trimable",
+            "enchantable"
+        ]
+    },
+    {
+        "id": "diamond-armor",
+        "name": "Diamond Armor Piece",
+        "prices": {
+            "glanga": 3,
+            "puan": 2.5,
+            "slab": 1.25,
+            "diamond": 1.5
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0,
+        "tags": [
+            "trimable",
+            "enchantable"
+        ]
+    },
+    {
+        "id": "diamond-armor-enchanted",
+        "name": "Enchanted Diamond Armor Piece",
+        "prices": {
+            "glanga": 5,
+            "puan": 4,
+            "slab": 2.25,
+            "diamond": 2.5
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0,
+        "tags": [
+            "trimable",
+            "enchantable"
+        ]
+    },
+    {
+        "id": "diamond-tool",
+        "name": "Diamond Tool or Weapon",
+        "prices": {
+            "glanga": 1,
+            "puan": 1,
+            "slab": 0.5,
+            "diamond": 0.5
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0,
+        "tags": [
+            "enchantable"
+        ]
+    },
+    {
+        "id": "diamond-tool-enchanted",
+        "name": "Enchanted Diamond Tool or Weapon",
+        "prices": {
+            "glanga": 3.5,
+            "puan": 3,
+            "slab": 1.5,
+            "diamond": 1.75
+        },
+        "image": "",
+        "description": "",
+        "purchases": 1,
+        "tags": [
+            "enchantable"
+        ]
+    },
+    {
+        "id": "totem",
+        "name": "Totem of Undying",
+        "prices": {
+            "glanga": 35,
+            "puan": 28,
+            "slab": 15.5,
+            "diamond": 17.5
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0
+    },
+    {
+        "id": "netherite-armor",
+        "name": "Netherite Armor Piece",
+        "prices": {
+            "glanga": 89,
+            "puan": 72,
+            "slab": 39.5,
+            "diamond": 44.5
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0,
+        "tags": [
+            "trimable",
+            "enchantable"
+        ]
+    },
+    {
+        "id": "netherite-armor-enchanted",
+        "name": "Enchanted Netherite Armor Piece",
+        "prices": {
+            "glanga": 91,
+            "puan": 74,
+            "slab": 40.5,
+            "diamond": 45.5
+        },
+        "image": "",
+        "description": "",
+        "purchases": 1,
+        "tags": [
+            "trimable",
+            "enchantable"
+        ]
+    },
+    {
+        "id": "netherite-tool",
+        "name": "Netherite Tool or Weapon",
+        "prices": {
+            "glanga": 87,
+            "puan": 70,
+            "slab": 38.5,
+            "diamond": 43.5
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0,
+        "tags": [
+            "enchantable"
+        ]
+    },
+    {
+        "id": "netherite-tool-enchanted",
+        "name": "Enchanted Netherite Tool or Weapon",
+        "prices": {
+            "glanga": 89.5,
+            "puan": 72,
+            "slab": 40,
+            "diamond": 44.75
+        },
+        "image": "",
+        "description": "",
+        "purchases": 1,
+        "tags": [
+            "enchantable"
+        ]
+    },
+    {
+        "id": "cherry-drop",
+        "name": "Ancient Drop of Cherry",
+        "prices": {
+            "glanga": 38,
+            "puan": 30.5,
+            "slab": 16.75,
+            "diamond": 19
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0
+    },
+    {
+        "id": "iron-horse-armor",
+        "name": "Iron or Gold Horse Armor",
+        "prices": {
+            "glanga": 8,
+            "puan": 6.5,
+            "slab": 3.5,
+            "diamond": 4
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0
+    },
+    {
+        "id": "diamond-horse-armor",
+        "name": "Diamond Horse Armor",
+        "prices": {
+            "glanga": 12,
+            "puan": 9.5,
+            "slab": 5.25,
+            "diamond": 6
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0
+    },
+    {
+        "id": "gold-apple",
+        "name": "Golden Apple",
+        "prices": {
+            "glanga": 0.1,
+            "puan": 0.1,
+            "slab": 0.05,
+            "diamond": 0.05
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0
+    },
+    {
+        "id": "gold-apple-enchanted",
+        "name": "Enchanted Golden Apple",
+        "prices": {
+            "glanga": 252,
+            "puan": 202,
+            "slab": 112,
+            "diamond": 126
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0
+    },
+    {
+        "id": "shield",
+        "name": "Enchanted Shield",
+        "prices": {
+            "glanga": 1,
+            "puan": 1,
+            "slab": 0.5,
+            "diamond": 0.5
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0,
+        "tags": [
+            "enchantable",
+            "shield"
+        ]
+    },
+    {
+        "id": "bow",
+        "name": "Enchanted Bow",
+        "prices": {
+            "glanga": 3,
+            "puan": 2.5,
+            "slab": 1.25,
+            "diamond": 1.5
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0
+    },
+    {
+        "id": "arrow",
+        "name": "Tipped Arrow",
+        "prices": {
+            "glanga": 0.025,
+            "puan": 0.02,
+            "slab": 0.01,
+            "diamond": 0.0125
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0
+    },
+    {
+        "id": "trim1",
+        "name": "Trimmed with Amethyst, Quartzs or Copper",
+        "additionPrices": {
+            "glanga": 14.25,
+            "puan": 11.5,
+            "slab": 6.25,
+            "diamond": 7.125
+        },
+        "image": "",
+        "description": "**",
+        "purchases": 0,
+        "addition": [
+            "trimable"
+        ],
+        "tags": [
+            "trim"
+        ]
+    },
+    {
+        "id": "trim2",
+        "name": "Trimmed with Iron, Gold, Emerald, Lapis or Redstone",
+        "additionPrices": {
+            "glanga": 14.5,
+            "puan": 12,
+            "slab": 6.5,
+            "diamond": 7.25
+        },
+        "image": "",
+        "description": "**",
+        "purchases": 1,
+        "addition": [
+            "trimable"
+        ],
+        "tags": [
+            "trim"
+        ]
+    },
+    {
+        "id": "trim3",
+        "name": "Trimmed with Diamond",
+        "additionPrices": {
+            "glanga": 17,
+            "puan": 14,
+            "slab": 7.5,
+            "diamond": 8.5
+        },
+        "image": "",
+        "description": "**",
+        "purchases": 0,
+        "addition": [
+            "trimable"
+        ],
+        "tags": [
+            "trim"
+        ]
+    },
+    {
+        "id": "trim4",
+        "name": "Trimmed with Netherite",
+        "additionPrices": {
+            "glanga": 86.5,
+            "puan": 69,
+            "slab": 38.5,
+            "diamond": 43.25
+        },
+        "image": "",
+        "description": "**",
+        "purchases": 0,
+        "addition": [
+            "trimable"
+        ],
+        "tags": [
+            "trim"
+        ]
+    },
+    {
+        "id": "enchantment",
+        "name": "More Enchantments",
+        "prices": {
+            "glanga": 0.25,
+            "puan": 0.25,
+            "slab": 0.1,
+            "diamond": 0.125
+        },
+        "image": "",
+        "description": "per enchantment level",
+        "purchases": 4,
+        "addition": [
+            "enchantable"
+        ],
+        "tags": [
+            "enchantable"
+        ]
+    },
+    {
+        "id": "addition",
+        "name": "Addition on non purchased item",
+        "prices": {
+            "glanga": 1,
+            "puan": 1,
+            "slab": 0.5,
+            "diamond": 0.5
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0,
+        "tags": [
+            "trimable",
+            "enchantable"
+        ]
+    },
+    {
+        "id": "vex-trim",
+        "name": "Vex Armor Trim",
+        "additionPrices": {
+            "glanga": 1152,
+            "puan": 922,
+            "slab": 512,
+            "diamond": 576
+        },
+        "image": "",
+        "description": "only as an addition on another item",
+        "purchases": 2,
+        "addition": [
+            "trim"
+        ]
+    },
+    {
+        "id": "eye-trim",
+        "name": "Eye Armor Trim",
+        "prices": {
+            "glanga": 576,
+            "puan": 461,
+            "slab": 256,
+            "diamond": 288
+        },
+        "image": "",
+        "description": "",
+        "purchases": 0,
+        "addition": [
+            "trim"
+        ]
+    },
+    {
+        "id": "trim",
+        "name": "Other Trim",
+        "prices": {
+            "glanga": 14,
+            "puan": 11.5,
+            "slab": 6.25,
+            "diamond": 7
+        },
+        "additionPrices": {
+            "glanga": 0,
+            "puan": 0,
+            "slab": 0,
+            "diamond": 0
+        },
+        "image": "",
+        "description": "any other trim except the Spire Armor Trim",
+        "purchases": 2,
+        "addition": [
+            "trim"
+        ],
+        "variations": [
+            "Sentry",
+            "Coast",
+            "Shaper",
+            "Tide",
+            "Dune",
+            "Host",
+            "Snout",
+            "Flow",
+            "Wild",
+            "Wayfinder",
+            "Ward",
+            "Rib",
+            "Bolt",
+            "Raiser",
+            "Silence"
+        ]
+    },
+    {
+        "id": "banner",
+        "name": "Banner",
+        "additionPrices": {
+            "glanga": 0,
+            "puan": 0,
+            "slab": 0,
+            "diamond": 0
+        },
+        "image": "",
+        "description": "may need to be provided",
+        "purchases": 0,
+        "addition": [
+            "shield"
+        ]
+    }
+]

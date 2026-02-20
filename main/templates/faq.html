@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armor Shop - FAQ</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" href="/resources/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Armor Shop <br /> <p class="laev"></p></h1>
+        <p class="laev"><em></em></p>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main">
+        <h3>FAQ</h3>
+        <div class="faq-container">
+            <div class="faq">
+                <div class="faq-head">
+                    <h3 id="q1">Hummus, what do you think?</h3>
+                </div>
+                <div id="a1" class="collapse">
+                    <p>Chickpea!</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-head">
+                    <h3 id="q2">Who is Agma Schwa?</h3>
+                </div>
+                <div id="a2" class="collapse">
+                    <p>No idea!</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq-head">
+                    <h3 id="q3">How many villages are in Enkavak?</h3>
+                </div>
+                <div id="a3" class="collapse">
+                    <p>There are no villages in Enkavak!</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <p onclick="openForm()" style="cursor: pointer;">Write your own question <a onclick="openForm()" style="cursor: pointer; color: yellow">></a></p>
+        <div>{% include 'message.html' %}</div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">{% include 'footer.html' %}</footer>
+
+    <script>
+        Array.from(document.getElementsByClassName("faq-head")).forEach(element => {
+            element.addEventListener("click", (event) => {
+                Array.from(document.getElementsByClassName("collapse")).forEach(element => {
+                    if (element.id == "a" + event.target.id.slice(-1) && !element.classList.contains("show")) {element.classList.add("show");}
+                    else {element.classList.remove("show");}
+                });
+            });
+        });
+    </script>
+    <script src="/js/message"></script>
+</body>
+</html>

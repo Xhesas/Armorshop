@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armor Shop - Home</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" href="/resources/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="banner">
+        <div>
+            <h1>Armor Shop <br /> <p class="laev"></p></h1>
+            <p class="laev"><em></em></p>
+            <p>Located in <strong><a href="https://mc.nguh.org/wiki/Yu%C9%B1a">Yuma</a></strong> (Xarslasja) and <strong><a href="https://mc.nguh.org/wiki/Alnangaemak">Alnangaemak</a></strong> (Enkavak)</p>
+        </div>
+    </header>
+
+    <!-- Catalog Section -->
+    <section class="main catalog">
+        <p>Select your currency:</p>
+        <div class="currency-selector">
+            <label for="currency">Currency: </label>
+            <select id="currency">
+                <option value="glanga">Glanga</option>
+                <option value="slab">Slab / Slablet</option>
+                <option value="diamond">Diamond</option>
+                <option value="puan">Puan Unity Argent</option>
+            </select>
+        </div>
+        <hr>
+
+        <!-- Most Purchased Section -->
+        <h3>Recomended Items</h3>
+        <div id="recommended-items" class="items">
+            {% for item in recommended %}
+            <div class="item">
+                <h4>{{ item.name }}</h4>
+                {% for price in item.prices %}
+                <p class="hide" name="{{ price[1] }}">Price: {{ price[0] }}</p>
+                {% endfor %}
+                <a href="/item/{{ item.id }}">more</a>
+            </div>
+            {% endfor %}
+        </div>
+
+        <hr>
+
+        <h3>Catalog</h3>
+        <div id="catalog-items" class="items">
+            {% for item in catalog %}
+            <div class="item">
+                <h4>{{ item.name }}</h4>
+                {% for price in item.prices %}
+                <p class="hide" name="{{ price[1] }}">Price: {{ price[0] }}</p>
+                {% endfor %}
+                <a href="/item/{{ item.id }}">more</a>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section class="main">
+        <h3>Rules for Shopping</h3>
+        <div style="width:50%; margin: auto; text-align: left;">
+        <ul>
+            <li>Don't take anything from the armor stands.</li>
+            <li>Don't break any blocks.</li>
+            <li>Only pay with accepted Currencies (Diamonds, Netherite or any <a href="https://mc.nguh.org/wiki/United_%C5%8Aations_Office_of_Monetary_Affairs#In_circulation">interŋational currency</a> as defined by the UŊ except the Swinefish).</li>
+            <li>For calculations on the price in a not given currency, use the price given in Glanga.</li>
+            <li>If you don't have the exact amount of money, either ask <a href="/contact">Xhesas</a> or round up.</li>
+            <li>Buy as much as you can ;3</li>
+        </ul>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">{% include 'footer.html' %}</footer>
+
+    <script src="/js/index"></script>
+</body>
+</html>

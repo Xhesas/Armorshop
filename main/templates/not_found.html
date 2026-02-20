@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armor Shop - Not Found</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" href="/resources/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Armor Shop <br /> <p class="laev"></p></h1>
+        <p class="laev"><em></em></p>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main">
+        <h2>404</h2>
+        <p>{{ msg }}</p>
+        <br>
+
+        <!-- Random Item -->
+        <div>
+            <p>Maybe you want to take a look at <a href="{{ item }}">this</a>.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">{% include 'footer.html' %}</footer>
+</body>
+</html>
