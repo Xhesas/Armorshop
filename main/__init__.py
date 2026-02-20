@@ -5,8 +5,7 @@ import random
 import numpy as np
 from datetime import datetime as dt
 
-from flask import Flask, request, render_template, make_response
-from werkzeug.utils import send_file, send_from_directory
+from flask import Flask, request, render_template, make_response, send_file, send_from_directory
 
 with open("data.json", "r") as file:
     catalog = json.load(file)
@@ -20,7 +19,7 @@ app = Flask(__name__)
 @app.route('/resources/<resource>')
 @app.route('/resource/<resource>')
 def route_resource(resource):
-    return send_from_directory('resources/', resource, request.environ)
+    return send_from_directory('resources/', resource)
 
 @app.route('/item/<item>')
 def route_item(item):
@@ -76,11 +75,11 @@ def route_item(item):
 def route_js(js):
     match js:
         case "" | "index" | "index.js":
-            return send_file('js/index.js', request.environ)
+            return send_file('js/index.js')
         case "item" | "item.js":
-            return send_file('js/item.js', request.environ)
+            return send_file('js/item.js')
         case "message" | "item.js":
-            return send_file('js/message.js', request.environ)
+            return send_file('js/message.js')
         case _:
             return ''
 
@@ -124,7 +123,7 @@ def route_index():
 @app.route('/main.css')
 @app.route('/css/')
 def route_css():
-    return send_file('main.css', request.environ)
+    return send_file('main.css')
 
 @app.route('/about')
 @app.route('/about.html')
@@ -151,20 +150,20 @@ def route_locations():
 @app.route('/data')
 @app.route('/data.json')
 def route_catalog():
-    return send_file('data.json', request.environ)
+    return send_file('data.json')
 
 @app.route('/favicon')
 @app.route('/favicon.ico')
 def route_favicon():
-    return send_file('resources/favicon.ico', request.environ)
+    return send_file('resources/favicon.ico')
 
 @app.route('/sitemap.xml')
 def route_sitemap():
-    return send_file('robots/sitemap.xml', request.environ)
+    return send_file('robots/sitemap.xml')
 
 @app.route('/robots.txt')
 def route_robots():
-    return send_file('robots/robots.txt', request.environ)
+    return send_file('robots/robots.txt')
 
 @app.route('/purchase', methods=["POST"])
 def route_purchase():
