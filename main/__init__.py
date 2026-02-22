@@ -217,7 +217,7 @@ def save_message(name, msg, r):
             filedata = json.load(outputfile)
         filedata['requests'].append(o)
         with open(output, "w") as outputfile:
-            json.dump(filedata, outputfile, indent=4)
+            json.dump(filedata, outputfile, indent=4, ensure_ascii=False)
 
 @app.errorhandler(404)
 def not_found(_):
