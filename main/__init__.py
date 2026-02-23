@@ -1,6 +1,8 @@
 import argparse
 import json
 import random
+from os import chdir
+from os.path import dirname, abspath
 
 import numpy as np
 from datetime import datetime as dt
@@ -267,6 +269,7 @@ def do_price(currency, price):
 
 
 if __name__ == '__main__':
+    chdir(dirname(abspath(__file__)))
     parser = argparse.ArgumentParser()
     parser.add_argument("-o", "--Output", type=str, help="Defines the output file for POST messages")
     parser.add_argument("-b", "--Blacklist", type=str, help="Defines the file to store blacklisted ips to")
