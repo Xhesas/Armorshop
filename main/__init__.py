@@ -10,6 +10,8 @@ from datetime import datetime as dt
 from flask import Flask, request, render_template, make_response, send_file, send_from_directory
 from werkzeug.middleware.proxy_fix import ProxyFix
 
+chdir(dirname(abspath(__file__)))
+
 with open("data.json", "r") as file:
     catalog = json.load(file)
 emptymsg = ["It seems you’ve wandered into uncharted territory.", "It looks like you are lost, can I help you?", "You shouldn't be here! The sign clearly said \"Staff Only\"!", "Sorry, but I can't find the soup you searched for."]
@@ -269,7 +271,6 @@ def do_price(currency, price):
 
 
 if __name__ == '__main__':
-    chdir(dirname(abspath(__file__)))
     parser = argparse.ArgumentParser()
     parser.add_argument("-o", "--Output", type=str, help="Defines the output file for POST messages")
     parser.add_argument("-b", "--Blacklist", type=str, help="Defines the file to store blacklisted ips to")
