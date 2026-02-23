@@ -6,6 +6,7 @@ import numpy as np
 from datetime import datetime as dt
 
 from flask import Flask, request, render_template, make_response, send_file, send_from_directory
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 with open("data.json", "r") as file:
     catalog = json.load(file)
@@ -269,7 +270,13 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("-o", "--Output", type=str, help="Defines the output file for POST messages")
     parser.add_argument("-b", "--Blacklist", type=str, help="Defines the file to store blacklisted ips to")
+    parser.add_argument("-d", "--Debug", action="store_true", help="Activate debug mode")
     args = parser.parse_args()
     output = args.Output if args.Output else None
     blacklist = args.Blacklist if args.Blacklist else None
-    app.run(port=5001)
+    # set proper wsgi for app if not debug
+    if not args.Debug:
+        app.wsgi_app = ProxyFix(
+            app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1
+        )
+    app.run(port=5001, debut=args.Debug)
